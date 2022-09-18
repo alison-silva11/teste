@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/foundation.css" />
+        <title>Alterar Produto</title>
+    </head>
+    <body>
+        <h1 align="center">Controle de Produtos</h1>
+        <hr>
+        <h3 align="center">${mensagem}</h3>
+        <form name="alterarproduto" action="AlterarProduto" method="post">
+                           Alterar Produtos
+                
+                    <div>
+                        <label for=""></label>
+                        <input type="text" name="idProduto" value="${carro.idProduto}" readonly="true" disabled>
+                    </div>
+                    
+               
+                    
+                    <input type="text" name="descricaoProduto" value="${carro.descricaoProduto}">
+                
+                    
+                   <input type="text" name="marcaProduto" value="${carro.marcaProduto}">
+               
+                    
+                   <input type="text" name="modeloProduto" value="${carro.modeloProduto}">
+              
+                    Preço:
+                   <input type="text" name="valorProduto" value="${carro.valorProduto}">
+               
+                   Ano Fabricação:
+                    <input type="text" name="anoCarro" value="${carro.anoCarro}">
+                
+                    <label for="">---</label>
+                    <input type="text" name="modeloCarro" value="${carro.modeloCarro}">
+                
+                   <label for="">N° de Portas:</label> 
+                   <input type="text" name="numeroportasCarro" value="${carro.numeroPortasCarro}">
+               
+                     <input type="submit" name="alterar" value="Alterar">
+                >
+            <h3 align="center"><a href="index.jsp"> Voltar</a></h3>
+        </form>
+        <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    </body>
+</html>
